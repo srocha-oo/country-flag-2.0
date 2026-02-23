@@ -22,12 +22,13 @@ struct CustomButton: View {
                     .background (background)
                     .cornerRadius (25)
                     .shadow(radius: 10)
-                
+            }
             }
         }
     }
-}
 
-#Preview {
-    CustomButton(text: "Next")
-}
+    #Preview {
+        CustomButton(text: "Next")
+    }
+
+
