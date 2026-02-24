@@ -23,8 +23,19 @@ struct AnswerRow: View {
                     .foregroundStyle(answer.isCorrect ? .green : .red)
             }
         }
+        .padding()
+        .frame (width: 300, alignment: .leading)
+        .background (.white)
+        .foregroundStyle(.black)
+        .cornerRadius (10)
+        .shadow(color: isSelected ? (answer.isCorrect ? .green : .red) : .gray, radius: 5, x: 0.5, y: 0.5)
+        .onTapGesture {
+            isSelected = true
+            
+        }
     }
 }
+
 
 #Preview {
     AnswerRow(answer: Answer(text: "Test", isCorrect: true))
