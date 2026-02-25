@@ -44,7 +44,7 @@ struct QuestionView: View {
                     .font(.title)
                     .fontWeight(.heavy)
                 Text ("Congratulations! You've completed the game!")
-                Text ("You scored |(gameManager.score) out of \(gameManager.questions.count)")
+                Text ("You scored \(gameManager.score) out of \(gameManager.questions.count)")
                 Button {
                     gameManager.reset()
                 } label: {
